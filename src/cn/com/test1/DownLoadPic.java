@@ -34,7 +34,6 @@ public class DownLoadPic {
 		initTagsMap();
 		// TODO Auto-generated method stub
 			String pageContent=pageContent("http://www.5442.com/tag/fengguang.html");
-			System.out.println(pageContent);
 			writeFile(pageContent);
 			pageContent=pageContent.toLowerCase();
 			List<String> tags=getTags(pageContent);
